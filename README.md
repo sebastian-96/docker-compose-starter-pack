@@ -1,8 +1,8 @@
 ## Docker
 1. [Overview](#docker-overview)
 2. [Images](#images)
-   - [Building and Removing Images](#buildremove-images)
-   - [Exporting and Importing Images](#exportimport-images)
+   - [Building and Removing Images](#build/remove-images)
+   - [Exporting and Importing Images](#export/import-images)
 3. [Getting Container Status](#getting-container-status)
 4. [Running Containers](#running-containers)
 5. [Interacting with Containers](#interacting-with-containers)
