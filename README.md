@@ -1,8 +1,8 @@
-## Docker
-1. [Overview](#docker-overview)
+# Docker
+1. [Docker Overview](#docker-overview)
 2. [Images](#images)
-   - [Building and Removing Images]
-   - [Exporting and Importing Images]
+   - [Building and Removing Images](#buildremove-images)
+   - [Exporting and Importing Images](#exportimport-images)
 3. [Getting Container Status](#getting-container-status)
 4. [Running Containers](#running-containers)
 5. [Interacting with Containers](#interacting-with-containers)
@@ -69,9 +69,7 @@ Docker is a platform for developing, shipping, and running applications in conta
 
 
 # Docker-Compose
-
-## Docker-Compose
-1. [Overview](#docker-compose-overview)
+1. [Docker-Compose Overview](#docker-compose-overview)
 2. [Images in Docker-Compose](#images-in-docker-compose)
 3. [Running Containers with Docker-Compose](#running-containers-with-docker-compose)
 4. [Stopping/Removing Containers with Docker-Compose](#stoppingremoving-containers-with-docker-compose)
