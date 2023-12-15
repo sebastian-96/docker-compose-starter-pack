@@ -2,8 +2,7 @@
 
 1. [Overview](#docker-overview)
 2. [Images](#images)
-   - [Building Images](#building-images)
-   - [Listing and Removing Images](#listing-and-removing-images)
+   - [Building and Removing Images](#building-images)
    - [Exporting and Importing Images](#exporting-and-importing-images)
 3. [Getting Container Status](#getting-container-status)
 4. [Running Containers](#running-containers)
@@ -17,6 +16,8 @@
 Docker is a platform for developing, shipping, and running applications in containers. Containers allow you to package an application with its dependencies and run it consistently across different environments.
 
 ## Images
+
+**Build/Remove Images:**
 
 - Build a Docker image from a Dockerfile: `docker build -t your-image-name .`
 - List all Docker images: `docker images`
