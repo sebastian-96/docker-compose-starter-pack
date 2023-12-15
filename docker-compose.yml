@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+
+  # Service using an image directly
+  direct-image-service:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+
+  # Service using a dockerfile to build image and copied init-script
+  service-with-copied-script:
+    build:
+      context: .
+      dockerfile: Dockerfile-copied-script
+
+  service-with-mounted-script:
+    build:
+      context: .
+      dockerfile: Dockerfile-mounted-script
+    volumes:
+      - ./scripts:/usr/src/app/scripts
+    entrypoint: /usr/src/app/scripts/init-script.sh
+    command: echo "Command executed from docker-compose"
