@@ -8,16 +8,15 @@ services:
     ports:
       - "8080:80"
 
-  # Service using a dockerfile to build image and copied init-script
+  # Service using a Dockerfile in the dockerfile-copied-init folder
   service-with-copied-script:
     build:
-      context: .
-      dockerfile: Dockerfile-copied-script
+      context: ./dockerfile-copied-init
 
+  # Service using a Dockerfile in the dockerfile-mounted-init folder
   service-with-mounted-script:
     build:
-      context: .
-      dockerfile: Dockerfile-mounted-script
+      context: ./dockerfile-mounted-init
     volumes:
       - ./scripts:/usr/src/app/scripts
     entrypoint: /usr/src/app/scripts/init-script.sh
