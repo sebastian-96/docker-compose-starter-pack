@@ -78,7 +78,7 @@ Docker is a platform for developing, shipping, and running applications in conta
 7. [Scaling Services in Docker-Compose](#scaling-services-in-docker-compose)
 8. [System Status and Information in Docker-Compose](#system-status-and-information-in-docker-compose)
 
-## Overview
+## Docker-Compose Overview
 
 Docker Compose simplifies the management of multi-container applications, allowing you to define, configure, and deploy complex setups with a single command.
 When you run docker-compose with a YAML file, it defines services, networks, and volumes for your application. 
