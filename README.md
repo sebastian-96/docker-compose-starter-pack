@@ -1,8 +1,8 @@
 ## Docker
 1. [Overview](#docker-overview)
 2. [Images](#images)
-   - [Building and Removing Images](#build/remove-images)
-   - [Exporting and Importing Images](#export/import-images)
+   - [Building and Removing Images](#building-and-removing-images)
+   - [Exporting and Importing Images](#exporting-and-importing-images)
 3. [Getting Container Status](#getting-container-status)
 4. [Running Containers](#running-containers)
 5. [Interacting with Containers](#interacting-with-containers)
@@ -16,13 +16,13 @@ Docker is a platform for developing, shipping, and running applications in conta
 
 ## Images
 
-**Build/Remove Images:**
+**Building and Removing Images:**
 
 - Build a Docker image from a Dockerfile: `docker build -t your-image-name .`
 - List all Docker images: `docker images`
 - Remove a Docker image: `docker rmi your-image-name`
 
-**Export/Import Images:**
+**Exporting and Importing Images:**
 
 - Export a Docker image as a tarball: `docker save -o your-image.tar your-image-name`
 - Export a Docker container as a tarball: `docker export your-container-name > your-container.tar`
