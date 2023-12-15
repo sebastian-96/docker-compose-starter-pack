@@ -1,3 +1,17 @@
+# Comprehensive Guide to Docker and Docker-Compose
+
+## Introduction
+
+### Docker Overview
+Docker is a platform for developing, shipping, and running applications in containers. Containers allow you to package an application with its dependencies and run it consistently across different environments.
+
+### Docker-Compose Overview
+Docker Compose simplifies the management of multi-container applications, allowing you to define, configure, and deploy complex setups with a single command. When you run docker-compose with a YAML file, it defines services, networks, and volumes for your application. Each service corresponds to a containerized application or component. Docker Compose automatically creates networks for communication between containers and uses volumes for data persistence. Containers started with Docker Compose are treated as services with hostnames, enabling inter-service communication. This is different from using Docker alone, where containers may not have meaningful hostnames.
+
+## Table of Contents
+1. [Docker](#docker)
+2. [Docker-Compose](#docker-compose)
+
 # Docker
 1. [Docker Overview](#docker-overview)
 2. [Images](#images)
@@ -9,10 +23,6 @@
 6. [Stopping/Removing Containers](#stoppingremoving-containers)
 7. [Mounting Files](#mounting-files)
 8. [System Status and Information](#system-status-and-information)
-
-## Docker-Overview
-
-Docker is a platform for developing, shipping, and running applications in containers. Containers allow you to package an application with its dependencies and run it consistently across different environments.
 
 ## Images
 
@@ -77,18 +87,6 @@ Docker is a platform for developing, shipping, and running applications in conta
 6. [Mounting Files in Docker-Compose](#mounting-files-in-docker-compose)
 7. [Scaling Services in Docker-Compose](#scaling-services-in-docker-compose)
 8. [System Status and Information in Docker-Compose](#system-status-and-information-in-docker-compose)
-
-## Docker-Compose Overview
-
-Docker Compose simplifies the management of multi-container applications, allowing you to define, configure, and deploy complex setups with a single command.
-When you run docker-compose with a YAML file, it defines services, networks, and volumes for your application. 
-Each service corresponds to a containerized application or component. 
-
-Docker Compose automatically creates networks for communication between containers and uses volumes for data persistence.
-Containers started with Docker Compose are treated as services with hostnames, enabling inter-service communication. 
-This is different from using Docker alone, where containers may not have meaningful hostnames.
-
-Docker Compose provides an easy way to orchestrate multiple containers, making it a powerful tool for developing and deploying complex applications.
 
 ## Images in Docker-Compose
 
